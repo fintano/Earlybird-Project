@@ -2,6 +2,7 @@ package kr.co.lguplus.last;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,21 +40,28 @@ public class PayActivity extends Activity {
                 paybtn[i].setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        studyInfo.setText("05.13.¼ö¿äÀÏ\n" +
-                                "¹Ù¸¥µ¶¼­½Ç  ¤Ó  (2015.5.13-2015.6.12)  ¤Ó  150,000¿ø");
+                        studyInfo.setText("05.13.ìˆ˜ìš”ì¼\n" +
+                                "ê¸€ì‚¬ë‘ë…ì„œì‹¤  ã…£  (2015.5.13-2015.6.12)  ã…£  150,000ì›");
                     }
                 });
             } else {
                 paybtn[i].setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        studyInfo.setText("³³ºÎ ³»¿ª ¾øÀ½");
+                        studyInfo.setText("ë‚©ë¶€ ë‚´ì—­ ì—†ìŒ");
                     }
                 });
             }
         }
     }
-
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            moveTaskToBack(true);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

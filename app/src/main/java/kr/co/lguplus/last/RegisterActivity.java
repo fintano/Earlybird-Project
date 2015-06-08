@@ -99,7 +99,7 @@ public class RegisterActivity extends Activity {
             mMonth = monthOfYear;
             mDay = dayOfMonth;
             String str;
-            str = String.format("%d³â %¿ù %ÀÏ ", mYear, mMonth + 1, mDay);
+            str = String.format("%dë…„ %dì›” %dì¼", mYear, mMonth + 1, mDay);
             UserInfo.getUserInfo().setFromDate(str);
             updateDisplay(str);
         }

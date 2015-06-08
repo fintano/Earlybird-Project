@@ -60,7 +60,9 @@ public class ProfileActivity extends Activity {
         //make Random number for Barcode
         Random rd = new Random();
         int barcodeNum = rd.nextInt(MAX - MIN)+MIN;
-        nameView.setText(currentUser.name + " 학생");
+        if(currentUser.name.equals(""))
+            currentUser.name = "유불럭";
+        nameView.setText("   " + currentUser.name + " 학생");
 
         //if it is went through PayActivity
         if(whichAct == UserInfo.FROM_PAY) {
@@ -205,10 +207,11 @@ public class ProfileActivity extends Activity {
 
         float dpInPx;
 
-        String str = "      " + currentUser.RRname + "\n" + currentUser.fromDate + " ~ " + currentUser.toDate + "\n Seat.No " + currentUser.seatNo;
+        String str = "      " + currentUser.RRname + "\n" + currentUser.fromDate + " ~ " + currentUser.toDate + "\n      Seat.No " + currentUser.seatNo;
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         params.gravity = Gravity.CENTER_HORIZONTAL;
         params.topMargin = 20;
+        params.leftMargin= 10;
         infoView.setLayoutParams(params);
         infoView.setGravity(View.TEXT_ALIGNMENT_CENTER);
         infoView.setTextColor(Color.BLACK);

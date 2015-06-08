@@ -3,7 +3,6 @@ package kr.co.lguplus.last;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -29,7 +28,6 @@ public class LoginActivity extends Activity {
     Button login, cont, cont_code, cancel, cancel1, register, map;
     String IDtxt, PWtxt, email_res_txt, code_txt, npass_txt;
     List<loginStruct> params;
-    SharedPreferences pref;
     Dialog reset;
     loginStruct loginInfo;
     //ServerRequest sr;
@@ -46,7 +44,6 @@ public class LoginActivity extends Activity {
         register = (Button) findViewById(R.id.first_view_button_register);
         //forpass = (Button)findViewById(R.id.forgotpass);
 
-        pref = getSharedPreferences("AppPref", MODE_PRIVATE);
 
 
         register.setOnClickListener(new View.OnClickListener() {

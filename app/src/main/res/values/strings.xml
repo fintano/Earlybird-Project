@@ -39,5 +39,6 @@
     <string name="title_activity_alarm">AlarmActivity</string>
     <string name="title_activity_study_list">StudyListActivity</string>
     <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_pay_confirm">PayConfirmActivity</string>
 
 </resources>

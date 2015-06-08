@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffec068d">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좌석 보기"
+            android:id="@+id/search_seating_chart"
+            android:textColor="#ffffffff"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -9,16 +28,8 @@
         android:layout_height="55dp"
         android:weightSum="8"
         android:id="@+id/seat_layout"
-        android:layout_marginTop="30dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="from"
-            android:id="@+id/textView2"
-            android:gravity="center"
-            android:layout_weight="1" />
+        android:layout_marginTop="10dp"
+        android:background="#ffe9e9e9">
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,10 +43,12 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="to"
-            android:id="@+id/textView4"
+            android:text="부터"
+            android:id="@+id/textView2"
             android:gravity="center"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,15 +58,31 @@
             android:gravity="center"
             android:layout_weight="3" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="까지"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="조회"
         android:id="@+id/seat_btn_search"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center" />
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="#ffffffff"
+        android:textSize="25sp"
+        android:textColor="#ffed1393"
+        android:singleLine="false"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -327,16 +356,19 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:weightSum="5"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Seat.No"
+            android:text="좌석번호"
             android:id="@+id/textView5"
             android:layout_weight="1"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
 
         <TextView
             android:layout_width="match_parent"
@@ -351,10 +383,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Price"
+            android:text="가격"
             android:id="@+id/textView6"
             android:layout_weight="1"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
 
         <TextView
             android:layout_width="match_parent"
@@ -367,11 +401,15 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Pay"
+            android:text="결제"
             android:id="@+id/seat_btn_pay"
             android:layout_weight="1"
             android:gravity="center"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:background="#ffffffff"
+            android:textColor="#ffee1d98"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </LinearLayout>

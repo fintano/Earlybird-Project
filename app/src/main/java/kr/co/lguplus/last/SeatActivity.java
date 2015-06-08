@@ -145,7 +145,7 @@ public class SeatActivity extends Activity {
                     StringBuffer str = new StringBuffer();
                     for (int i = 17; i >= 0; i--) {
                         if (isSelected[i] == 1) {
-                            str.append(i + " ");
+                            str.append(i+1 + " ");
                             cnt++;
                         }
                     }
@@ -188,7 +188,7 @@ public class SeatActivity extends Activity {
                 /* picked seats */
                     for (int i = 10; i >= 0; i--) {
                         tmp = rd.nextInt(18);
-                        btn[tmp].setBackgroundColor(Color.RED);
+                        btn[tmp].setBackgroundColor(Color.parseColor("#ec088e"));
                         seatNum[tmp] = 1;
                     }
                     seatLayout.setVisibility(View.VISIBLE);
@@ -201,10 +201,9 @@ public class SeatActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(SeatActivity.this,ProfileActivity.class);
+                Intent intent = new Intent(SeatActivity.this,PayConfirmActivity.class);
                 //Bundle bundle = new Bundle();
                 //bundle.putInt("EXTRA_INT",UserInfo.FROM_PAY);
-                intent.putExtra("EXTRA_INT", UserInfo.FROM_PAY);
                 startActivity(intent);
                 finish();
             }

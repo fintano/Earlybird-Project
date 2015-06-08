@@ -218,10 +218,11 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="342dp"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="15sp"
-        android:id="@+id/paylist_text" />
+        android:id="@+id/paylist_text"
+        android:layout_gravity="right" />
 
 </LinearLayout>

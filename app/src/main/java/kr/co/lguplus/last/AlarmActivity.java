@@ -26,7 +26,7 @@ public class AlarmActivity extends Activity {
             public void onClick(View view) {
                 Toast toast;
                 toast = Toast.makeText(getApplicationContext(),
-                        "¾Ë¶÷À» ¼³Á¤ÇÏ¼Ì½À´Ï´Ù.", Toast.LENGTH_SHORT);
+                        "ì•ŒëŒì´ ì„¤ì • ë˜ì—ˆìŠµë‹ˆë‹¤.", Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
 
