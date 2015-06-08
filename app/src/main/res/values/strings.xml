@@ -33,5 +33,11 @@
 
     <string name="go_to_hannam">Go to Hannam</string>
     <string name="go_to_pangyo">Go to Pangyo</string>
+    <string name="title_activity_gcmintent_service">GCMIntentService</string>
+    <string name="title_activity_dream">DreamActivity</string>
+    <string name="title_activity_munu">MunuActivity</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="title_activity_study_list">StudyListActivity</string>
+    <string name="title_activity_pay">PayActivity</string>
 
 </resources>

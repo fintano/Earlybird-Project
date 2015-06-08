@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.gcm.GCMRegistrar;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -34,13 +37,13 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.firstview);
         //loginInfo = new loginStruct();
 
-        ID = (EditText) findViewById(R.id.login_ID);
-        PW = (EditText) findViewById(R.id.login_PW);
-        login = (Button) findViewById(R.id.loginbtn);
-        register = (Button) findViewById(R.id.registerbtn);
+        ID = (EditText) findViewById(R.id.first_view_edit_id);
+        PW = (EditText) findViewById(R.id.first_view_edit_pw);
+        login = (Button) findViewById(R.id.first_view_button_login);
+        register = (Button) findViewById(R.id.first_view_button_register);
         //forpass = (Button)findViewById(R.id.forgotpass);
 
         pref = getSharedPreferences("AppPref", MODE_PRIVATE);
@@ -68,7 +71,7 @@ public class LoginActivity extends Activity {
 
                 Iterator<loginStruct> itr = UserInfo.user.iterator();
 
-                while(itr.hasNext()) {
+                while (itr.hasNext()) {
                     loginInfo = itr.next();
                     if (IDtxt.equals(loginInfo.ID) && PWtxt.equals(loginInfo.PW)) {
 
@@ -82,38 +85,7 @@ public class LoginActivity extends Activity {
                         finish();
                     }
                 }
-/*
-                params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("email", IDtxt));
-                params.add(new BasicNameValuePair("password", PWtxt));
 
-                ServerRequest sr = new ServerRequest();
-                JSONObject json = sr.getJSON("http://10.0.2.2:8080/login", params);
-  */     /*
-                if (json != null) {
-                    try {
-                        String jsonstr = json.getString("response");
-                        if (json.getBoolean("res")) {
-                            String token = json.getString("token");
-                            String grav = json.getString("grav");
-                            SharedPreferences.Editor edit = pref.edit();
-                            //Storing Data using SharedPreferences
-                            edit.putString("token", token);
-                            edit.putString("grav", grav);
-                            edit.commit();
-                            Intent profactivity = new Intent(LoginActivity.this, ProfileActivity.class);
-
-                            startActivity(profactivity);
-                            finish();
-                        }
-
-                        Toast.makeText(getApplication(), jsonstr, Toast.LENGTH_LONG).show();
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-                */
             }
         });
     }

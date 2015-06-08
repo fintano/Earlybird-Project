@@ -24,7 +24,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:id="@+id/profile_barcode"
+        android:id="@+id/profile_barcode2"
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:id="@+id/barcode_mainlayout"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/barcode_layout"
+        android:background="#ffec068d"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/barcode_button_menu"
+            android:src="@drawable/menu"
+            android:background="#ffec068d"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/barcode_edit_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:singleLine="true"
+            android:layout_marginLeft="70dp"
+            android:textColor="#ff000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/profile_barcode"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <!--
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="독서실을 선택해주세요"
+            android:id="@+id/barcode_button_choice"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffec068d"
+            android:textColor="#ffffffff"
+            android:textSize="25dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="250dp"
+            android:textStyle="bold" />
+    -->
+</LinearLayout>
