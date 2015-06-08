@@ -61,8 +61,8 @@ public class ProfileActivity extends Activity {
         Random rd = new Random();
         int barcodeNum = rd.nextInt(MAX - MIN)+MIN;
         if(currentUser.name.equals(""))
-            currentUser.name = "유불럭";
-        nameView.setText("   " + currentUser.name + " 학생");
+            currentUser.name = "유플럿";
+        nameView.setText(currentUser.name + " 학생");
 
         //if it is went through PayActivity
         if(whichAct == UserInfo.FROM_PAY) {

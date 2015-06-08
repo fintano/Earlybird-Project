@@ -14,11 +14,12 @@ import android.widget.TextView;
 public class StudyListActivity extends Activity {
     DatePicker datePicker;
     TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.studylist);
-        tv = (TextView)findViewById(R.id.studylist_info);
+        tv = (TextView) findViewById(R.id.studylist_info);
         datePicker = (DatePicker) findViewById(R.id.datePicker);
 
         datePicker.init(datePicker.getYear(),
@@ -55,12 +56,9 @@ public class StudyListActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            moveTaskToBack(true);
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
+    public void onBackPressed() {
+        finish();
     }
 }
