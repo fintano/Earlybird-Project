@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/alarm"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/studyplus_logo"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo"
+        android:background="#FFFFFFFF"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:weightSum="5.0"
+        android:baselineAligned="false"
+        android:background="#33ff614f">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_search_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_white"
+            android:baselineAlignBottom="false"
+            android:background="#ffffc5c0" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_talk_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/talk_white"
+            android:cropToPadding="false"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_alarm_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alarm_white"
+            android:background="#ffec088e" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_study_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study_white"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alarm_bill_btn"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0"
+            android:src="@drawable/pay_white"
+            android:adjustViewBounds="false"
+            android:background="#33ff614f"
+            android:focusableInTouchMode="false" />
+
+    </LinearLayout>
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:clickable="false"
+        android:amPmBackgroundColor="#ffffffff"
+        android:background="#ffffffff"
+        android:timePickerMode="spinner"
+        android:nestedScrollingEnabled="true"
+        android:numbersBackgroundColor="#ffffffff"
+        android:numbersSelectorColor="#ff000000"
+        android:numbersTextColor="#ff000000"
+        android:textAlignment="center"
+        android:touchscreenBlocksFocus="false"
+        android:layoutMode="opticalBounds"
+        android:layout_gravity="center"
+        android:amPmTextColor="#d870ff69"
+        android:alpha="50"
+        android:outlineProvider="bounds"
+        android:paddingTop="50dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/alarm1_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/textView2"
+            android:text="쉴 땐 쉬고 할 땐 하자!\n시간을 설정하시면 깨워드립니다."
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="등록하기"
+        android:id="@+id/alarm_button_register"
+        android:background="@drawable/roundedbutton"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

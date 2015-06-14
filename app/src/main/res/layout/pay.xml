@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffe8e8e8">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffec068d">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="결제"
+            android:id="@+id/payment"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe8e8e8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="  결제 정보"
+            android:id="@+id/payment_info_title"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="총결제가격                                                     150,000원"
+            android:id="@+id/payment_info_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe8e8e8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="  결제 수단"
+            android:id="@+id/payment_types_title"
+            android:gravity="center_vertical"
+            android:textColor="#FF000000"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 신용카드"
+                android:id="@+id/payment_btn_credictcard"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#ffe24eff"
+                android:checked="false"
+                android:textColor="#FF000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 휴대폰"
+                android:id="@+id/payment_btn_phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#ffe24eff"
+                android:checked="false"
+                android:textColor="#FF000000"
+                android:textStyle="bold"
+                android:layout_marginTop="0.7dp"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" PayNow"
+                android:id="@+id/payment_btn_paynow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#ffe24eff"
+                android:checked="true"
+                android:textColor="#FF000000"
+                android:textStyle="bold"
+                android:layout_marginTop="0.7dp"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe8e8e8"
+        android:layout_marginTop="3dp">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 결제서비스 약관에 모두 동의합니다."
+            android:id="@+id/checkBox1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFFFFFF"
+            android:layout_marginRight="10dp"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=" 서비스 이용약관 동의"
+            android:id="@+id/checkBox2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0.7dp"
+            android:background="#ffffffff"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=" 개인정보 수집 및 이용 동의"
+            android:id="@+id/checkBox3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0.7dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffffff"
+            android:textColor="#FF000000"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text=" 개인정보 제공 및 위탁 동의"
+            android:id="@+id/checkBox4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0.7dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFFFF"
+            android:textColor="#FF000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="결제하기"
+            android:id="@+id/btn_pay"
+            android:background="#ffec088e"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

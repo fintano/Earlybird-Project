@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="rectangle"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient
+            android:startColor="#33ff614f"
+            android:endColor="#33ff614f"
+            android:angle="90">
+        </gradient>
+
+        <corners android:radius="10dip" />
+
+        <stroke
+            android:width="1px"
+            android:color="@android:color/background_dark" />
+    </shape>
+</item>
+    <item>
+        <bitmap android:src="@drawable/noseat_xml"/>
+    </item>
+</layer-list>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffec068d">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좌석 보기"
+            android:id="@+id/search_seating_chart"
+            android:textColor="#ffffffff"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:weightSum="8"
+        android:id="@+id/seat_layout"
+        android:layout_marginTop="10dp"
+        android:background="#ffe9e9e9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="부터"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="까지"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="조회"
+        android:id="@+id/seat_btn_search"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedbutton"
+        android:textSize="25sp"
+        android:textColor="#ffffffff"
+        android:singleLine="false"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:id="@+id/seat_layout2"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="136dp"
+            android:layout_height="242dp"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="1"
+                    android:id="@+id/seat_btn1"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat"
+                    android:visibility="visible" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="4"
+                    android:id="@+id/seat_btn4"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="2"
+                    android:id="@+id/seat_btn2"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="5"
+                    android:id="@+id/seat_btn5"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="3"
+                    android:id="@+id/seat_btn3"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="6"
+                    android:id="@+id/seat_btn6"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="136dp"
+            android:layout_height="242dp"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="7"
+                    android:id="@+id/seat_btn7"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="10"
+                    android:id="@+id/seat_btn10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="8"
+                    android:id="@+id/seat_btn8"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="11"
+                    android:id="@+id/seat_btn11"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="9"
+                    android:id="@+id/seat_btn9"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="12"
+                    android:id="@+id/seat_btn12"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="136dp"
+            android:layout_height="242dp"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="13"
+                    android:id="@+id/seat_btn13"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="16"
+                    android:id="@+id/seat_btn16"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="14"
+                    android:id="@+id/seat_btn14"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="17"
+                    android:id="@+id/seat_btn17"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="15"
+                    android:id="@+id/seat_btn15"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="18"
+                    android:id="@+id/seat_btn18"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/roundedbutton_seat" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="좌석"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/seat_info_seat"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="가격"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/seat_info_price"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="결제"
+            android:id="@+id/seat_btn_pay"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:background="#ffffffff"
+            android:textColor="#ffee1d98"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

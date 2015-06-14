@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/studyplus_logo"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo"
+        android:background="#FFFFFFFF"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:weightSum="5.0"
+        android:baselineAligned="false"
+        android:background="#33ff614f">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/study_search_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_white"
+            android:baselineAlignBottom="false"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/study_talk_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/talk_white"
+            android:cropToPadding="false"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/study_alarm_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alarm_white"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/study_study_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study_white"
+            android:background="#ffef2c9f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/study_pay_btn"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0"
+            android:src="@drawable/pay_white"
+            android:adjustViewBounds="false"
+            android:background="#33ff614f"
+            android:focusableInTouchMode="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="조회"
+        android:typeface="monospace"
+        android:id="@+id/studylist_button"
+        android:background="@drawable/roundedbutton_othercolor_orange"
+        android:textColor="#555555"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/studylist_date"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:text="2015.05.13 오전 10시 28분 입실\n2015.05.13 오후 12시 03분 퇴실\n2015.05.13 오후 1시 22분 입실\n2015.05.13 오후 4시 34분 퇴실"
+        android:id="@+id/studylist_info"
+        android:textSize="16dp"
+        android:textColor="#ff000000"
+        android:visibility="invisible"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textIsSelectable="true" />
+
+
+</LinearLayout>

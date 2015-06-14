@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/studyplus_logo"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo"
+        android:background="#FFFFFFFF"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:weightSum="5.0"
+        android:baselineAligned="false"
+        android:background="#33ff614f">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bill_search_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_white"
+            android:baselineAlignBottom="false"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bill_talk_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/talk_white"
+            android:cropToPadding="false"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bill_alarm_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alarm_white"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bill_study_btn"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study_white"
+            android:background="#33ff614f" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bill_pay_btn"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0"
+            android:src="@drawable/pay_white"
+            android:adjustViewBounds="false"
+            android:background="#ffef2c9f"
+            android:focusableInTouchMode="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1월"
+            android:id="@+id/paylist_button_1"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2월"
+            android:id="@+id/paylist_button_2"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="3월"
+            android:id="@+id/paylist_button_3"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4월"
+            android:id="@+id/paylist_button_4"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="5월"
+            android:id="@+id/paylist_button_5"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="6월"
+            android:id="@+id/paylist_button_6"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="7월"
+            android:id="@+id/paylist_button_7"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="8월"
+            android:id="@+id/paylist_button_8"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="9월"
+            android:id="@+id/paylist_button_9"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="10월"
+            android:id="@+id/paylist_button_10"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="11월"
+            android:id="@+id/paylist_button_11"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="12월"
+            android:id="@+id/paylist_button_12"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffeaf5"
+            android:singleLine="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/paylist_text" />
+
+</LinearLayout>
