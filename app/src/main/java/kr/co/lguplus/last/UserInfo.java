@@ -9,12 +9,14 @@ class UserInfo {
     public static final int FROM_PAY = 1;
     public static final int FROM_LOGIN = 0;
     public static LinkedList<loginStruct> user= new LinkedList();
-    private static ReadingRoomStruct currentUser; // nullÀÏ°æ¿ì?
+    private static ReadingRoomStruct currentUser; // nullï¿½Ï°ï¿½ï¿½?
     public static void setUserInfo(loginStruct ls) {
         currentUser = new ReadingRoomStruct(ls.ID,ls.PW,ls.name,ls.ID,ls.gender,ls.type);
     }
     public static ReadingRoomStruct  getUserInfo(){
         return currentUser;
+
+        
     }
 
     /*public static void setReadingRoomInfo(ReadingRoomStruct rr) {
