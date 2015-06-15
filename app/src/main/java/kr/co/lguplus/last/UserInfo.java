@@ -16,7 +16,7 @@ class UserInfo {
     public static ReadingRoomStruct  getUserInfo(){
         return currentUser;
 
-        
+
     }
 
     /*public static void setReadingRoomInfo(ReadingRoomStruct rr) {

@@ -46,6 +46,9 @@
             android:name=".PayConfirmActivity"
             android:label="@string/title_activity_pay_confirm" >
         </activity>
+        <activity
+            android:name=".MessageActivity">
+        </activity>
     </application>
 
 </manifest>

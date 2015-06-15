@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -55,11 +56,20 @@ public class ProfileActivity extends Activity {
         currentUser = UserInfo.getUserInfo();
 
 /*It's menu that is shown by Profile*/
+        ImageButton talkbtn = (ImageButton) findViewById(R.id.profile_talk_btn);
         ImageButton searchbtn = (ImageButton) findViewById(R.id.profile_search_btn);
         ImageButton alarmbtn = (ImageButton) findViewById(R.id.profile_alarm_btn);
         ImageButton studybtn = (ImageButton) findViewById(R.id.profile_study_btn);
         ImageButton billbtn = (ImageButton) findViewById(R.id.profile_pay_btn);
 
+        talkbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, MessageActivity.class);
+                startActivity(intent);
+
+            }
+        });
         searchbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

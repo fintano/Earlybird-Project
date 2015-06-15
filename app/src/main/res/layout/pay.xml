@@ -188,15 +188,16 @@
         android:layout_marginLeft="10dp">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="결제하기"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="결제"
             android:id="@+id/btn_pay"
-            android:background="#ffec088e"
-            android:gravity="center"
-            android:textColor="#FFFFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:singleLine="true"
             android:textStyle="bold"
-            android:textSize="22sp"
-            android:singleLine="true" />
+            android:layout_marginTop="30dp" />
     </LinearLayout>
 </LinearLayout>
